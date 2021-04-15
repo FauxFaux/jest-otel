@@ -1,0 +1,26 @@
+{
+  "name": "jest-otel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@opentelemetry/api": "^0.18.1",
+    "@opentelemetry/instrumentation": "^0.18.2",
+    "@opentelemetry/instrumentation-http": "^0.18.2",
+    "@opentelemetry/node": "^0.18.2",
+    "@opentelemetry/plugin-http": "^0.18.2",
+    "@opentelemetry/plugin-https": "^0.18.2",
+    "@opentelemetry/tracing": "^0.18.2",
+    "jest": "^27.0.0-next.8",
+    "jest-runtime": "^27.0.0-next.8"
+  },
+  "devDependencies": {
+    "needle": "^2.6.0",
+    "prettier": "^2.2.1"
+  }
+}
