@@ -4,6 +4,7 @@ const ourtel = require("../app/otel");
 module.exports = class FunRuntime extends JestRuntime {
   constructor() {
     super(...arguments);
+    this._environment.global.REAL_OTEL_API = require('@opentelemetry/api');
   }
 
   //

@@ -1,3 +1,5 @@
+jest.mock('@opentelemetry/api', () => global.REAL_OTEL_API);
+
 const otel = require('@opentelemetry/api');
 const { start, stop, trace } = require("../app/otel");
 const http = require("http");

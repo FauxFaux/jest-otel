@@ -1,3 +1,5 @@
+jest.mock('@opentelemetry/api', () => global.REAL_OTEL_API);
+
 const otel = require("@opentelemetry/api");
 otel.diag.setLogger(new otel.DiagConsoleLogger(), otel.DiagLogLevel.DEBUG);
 const needle = require("needle");
