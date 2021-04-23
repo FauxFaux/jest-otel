@@ -7,18 +7,6 @@ module.exports = class FunRuntime extends JestRuntime {
     this._environment.global.REAL_OTEL_API = require('@opentelemetry/api');
   }
 
-  //
-  // _loadModule(
-  //   localModule, //: InitialModule,
-  //   from, //: Config.Path,
-  //   moduleName, //: string | undefined,
-  //   modulePath, //: Config.Path,
-  //   options, //: InternalModuleOptions | undefined,
-  //   moduleRegistry, //: ModuleRegistry,
-  // ) {
-  //   return super._loadModule(...arguments);
-  // }
-  //
   _requireCoreModule(moduleName /* string */) {
     let upper = super._requireCoreModule(moduleName);
     if (!["http", "https"].includes(moduleName)) return upper;
